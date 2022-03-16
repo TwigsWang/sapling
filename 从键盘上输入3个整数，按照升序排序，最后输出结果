@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,fir,sec,thi;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b&&a>c&&b>c)
+    {fir=a;
+        sec=b;
+        thi=c;}
+    if(a>b&&a>c&&c>b)
+    {fir=a;
+        sec=c;
+        thi=b;}
+    if(b>a&&b>c&&a>c)
+    {fir=b;
+        sec=a;
+        thi=c;}
+    if(b>a&&b>c&&c>a)
+    {fir=b;
+        sec=c;
+        thi=a;}
+    if(c>a&&c>b&&a>b)
+    {fir=c;
+        sec=a;
+        thi=b;}
+    if(c>a&&c>b&&b>a)
+    {fir=c;
+        sec=b;
+        thi=a;}
+    printf("%d,%d,%d\n",thi,sec,fir);
+    return 0;
+}
