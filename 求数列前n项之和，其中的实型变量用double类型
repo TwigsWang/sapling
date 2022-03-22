@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a=0;
+    double sum=0.0;
+    while(a<n)
+    {
+        sum=sum+1.0/(2*a+1);
+        a++;
+    }
+    printf("%.2lf\n",sum);
+    return 0;
+}
